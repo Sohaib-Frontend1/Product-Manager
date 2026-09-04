@@ -20,12 +20,12 @@ It lets you add, edit, and delete products with live calculations. All data is s
 - Vanilla JavaScript ES6
 - localStorage for data persistence
 
-### How to run
-Download the files and open `index.html` in your browser.
+### Live Demo
+You can try it on: [https://sohaib-frontend1.github.io/Product-Manager](https://sohaib-frontend1.github.io/Product-Manager)
 
 ### Screenshot
 ![App Screenshot](./screenshot.png)
 
 ---
 Built this to practice CRUD operations, form validation, and DOM manipulation with plain JS.
-Feel free to use it or build on top of it.
+Feel free to use it.
