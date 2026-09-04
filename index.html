@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Manager</title>
+        <link rel="icon" href="./dashboard.jpg" type="image/jpg">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <h1>Product Manager</h1>
+
+            <p class="subtitle">
+                Manage your products using JavaScript and Local Storage
+            </p>
+
+            <div class="form-box">
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Product name"
+                />
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Product price"
+                />
+
+                <input
+                    type="number"
+                    id="productQuantity"
+                    placeholder="Product quantity"
+                />
+
+                <button id="saveBtn">Save Product</button>
+
+                <p id="message"></p>
+            </div>
+
+            <div class="list-box">
+                <div class="list-top">
+                    <h3>Products</h3>
+                    <button onclick="deleteAll()">Delete All</button>
+                </div>
+
+                <p class="total">Total products: <span id="total">0</span></p>
+                
+                <div id="productList"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

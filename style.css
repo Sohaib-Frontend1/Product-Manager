@@ -1,0 +1,162 @@
+:root {
+    --main: #2563eb;
+    --bg: #161817;
+    --delete: #ff4d4d;
+    --dlt-btn-hvr: #e60000;
+}
+
+* {
+    color: #fff;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.app {
+    background-color: #0d0d0d;
+    height: fit-content;
+    width: 80%;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 70px auto;
+}
+
+h1,
+.subtitle {
+    text-align: center;
+}
+
+h1 {
+    color: var(--main, #2563eb);
+}
+
+.subtitle {
+    opacity: 0.5;
+}
+
+.form-box,
+.product-card {
+    background-color: var(--bg, #f8f9fa);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card {
+    margin: 15px auto;
+}
+
+input,
+button {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+input {
+    outline: none;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background-color: var(--bg);
+}
+
+button {
+    background-color: var(--main, #2563eb);
+    color: #fff;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+p#message {
+    color: var(--delete);
+    min-height: 35px;
+    background-image: linear-gradient(
+        45deg,
+        #0c3794,
+        #0d45bf,
+        #1f61f1,
+        #6b97f6
+    );
+    width: 95%;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.total {
+    text-align: center;
+    color: #facc15;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.list-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-top,
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-top button,
+.delete-btn {
+    background-color: var(--delete);
+}
+
+.list-top button:hover,
+.delete-btn:hover {
+    background-color: var(--dlt-btn-hvr);
+}
+
+.edit-btn {
+    background-image: linear-gradient(
+        125deg,
+        #4b67a7,
+        #296d6f,
+        #5679cb,
+        #b3eeda
+    );
+    background-size: 200% 100%;
+    transition: background-position 0.4s ease;
+    background-position: left center;
+    color: white;
+    border: none;
+}
+
+.edit-btn:hover {
+    background-position: right center;
+}
+
+@media (max-width: 550px) {
+    .app {
+        padding: 10px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        white-space: nowrap;
+    }
+
+    p#message {
+        font-size: 0.7rem;
+        font-weight: bold;
+        white-space: nowrap;
+        padding: 10px 20px;
+        width: 95%;
+        margin-left: -13px;
+        overflow: auto;
+    }
+}
